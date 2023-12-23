@@ -1,0 +1,155 @@
+.memberObject {
+    display: flex;
+    flex-direction: column;
+    width: 20.56%;
+    height: 380px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #060922;
+    border: 0;
+}
+
+.memberImage {
+    width: 186px;
+    height: 186px;
+    border-radius: 186px;
+    padding: 14px;
+}
+
+.memberText {
+    text-align: center;
+    align-items: start;
+    justify-content: start;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+}
+
+.memberName {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+}
+
+.memberJob {
+    color: #FFF;
+    padding: 8px 0;
+    font-family: Inter, sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+}
+
+.memberDescription {
+    color: #FFF;
+    padding: 12px 0;
+    font-family: Inter, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 90%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width: 1920px) {
+    .memberObject {
+        width: 20.56%;
+        height: 380px;
+    }
+
+    .memberImage {
+        width: 186px;
+        height: 186px;
+        padding: 14px;
+    }
+
+    .memberText {
+        height: 165px;
+    }
+
+    .memberName {
+        font-size: 1.5em;
+    }
+
+    .memberJob {
+        padding: 8px 0;
+        font-size: 1.25em;
+    }
+
+    .memberDescription {
+        padding: 12px 0;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1600px) {
+    .memberObject {
+        height: 360px;
+    }
+
+    .memberImage {
+        width: 166px;
+        height: 166px;
+        padding: 12px;
+    }
+
+    .memberText {
+        height: 150px;
+    }
+
+    .memberName {
+        font-size: 1.25em;
+    }
+
+    .memberJob {
+        padding: 7px 0;
+        font-size: 1.05em;
+    }
+
+    .memberDescription {
+        padding: 11px 0;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 1440px) {
+    .memberObject {
+        height: 340px;
+    }
+
+    .memberImage {
+        width: 156px;
+        height: 156px;
+        padding: 11px;
+    }
+
+    .memberText {
+        height: 140px;
+    }
+
+    .memberName {
+        font-size: 1.1em;
+    }
+
+    .memberJob {
+        padding: 7px 0;
+        font-size: 0.95em;
+    }
+
+    .memberDescription {
+        padding: 10px 0;
+        font-size: 0.85em;
+    }
+}

@@ -1,0 +1,206 @@
+.modal {
+    height: 100vh;
+    width: 200vh;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modalContent{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    width: 50vw;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.modalContent_active{
+    padding: 20px;
+    border-radius: 90px;
+    background-image: url("./../public/images/guns.png");
+    border: 3px solid #000;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    z-index: 1000;
+    width: 1080px;
+    height: 1080px;
+    transform: scale(1);
+}
+
+.modal_active {
+    height: 100vh;
+    width: 200vh;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.form {
+    width: 576px;
+    height: 820px;
+    border-radius: 20px;
+    border: 1px solid #443C3C;
+    background: #868686;
+    margin: 83px 252px 177px 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.title {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 22px 79px 0 80px;
+}
+
+.classicButton{
+    width: 552px;
+    height: 82px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #D9D9D9;
+    padding: 32px 12px;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.classicButton:hover{
+    background: #3c2424;
+}
+
+.classicButton1{
+    width: 552px;
+    height: 82px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #D9D9D9;
+    padding: 32px 12px;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.classicButton1:hover{
+    background: #3c2424;
+}
+
+.classicButtonText{
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.desc{
+    color: #D9DBDC;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 27px 117px 0 118px;
+}
+
+.input{
+    width: 552px;
+    height: 82px;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: #1F1F1F;
+}
+
+.input::placeholder{
+    color: #878787;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.meta{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.meta span{
+    color: #1975D2;
+    text-decoration-line: underline;
+}
+
+.bigBlueButton{
+    width: 552px;
+    height: 82px;
+    border-radius: 20px;
+    border: 2px solid #0500FC;
+    background: #004DCD;
+}
+
+.bigBlueButton:hover{
+    background: #5b77ab;
+}
+
+.bigBlueButton p{
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bigBlueButton p:hover{
+    color: #e8e8e8;
+}
+
+.endLine{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.endLinetext{
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.endLinetext1{
+    color: #004DCD;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
