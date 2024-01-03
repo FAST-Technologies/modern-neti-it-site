@@ -40,6 +40,15 @@ body{
     padding-right: 352px;
 }
 
+.timee{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.datee{
+    padding-left: 10px;
+}
+
 .social{
     height: 36px;
     display: flex;

@@ -1,5 +1,5 @@
 // @ts-ignore
-import React from 'react';
+import React, {useState} from 'react';
 import styles from "./AboutUs.module.css";
 import Header from "../UsedUIComponents/Header/Header.tsx";
 import Footer from "../UsedUIComponents/Footer/Footer.tsx";
@@ -19,6 +19,8 @@ const people: {id: number, name: string, job: string, description: string, img: 
     { id: 3, name: "Алиса Юркевич", job: "Разработчик", description: "6 лет опыта Senior developer Основал наш проект, нанял команду, открыл 4 направления.", img: './people/w3.jpg' },
     { id: 4, name: "Андрей Киселёв", job: "Разработчик", description: "6 лет опыта Senior developer Основал наш проект, нанял команду, открыл 4 направления.", img: './people/w4.jpg' }]
 const AboutUs = () => {
+    const [time, setTime] = useState<Date>(new Date())
+    setInterval(() => setTime(new Date()), 1000)
     return (
         <div className={styles.cont}>
             <Header/>
@@ -27,6 +29,14 @@ const AboutUs = () => {
                     <a href="https://vk.com/neti_it" target="_blank"><img src="images/Vkontakte.svg" alt="Vk"/></a>
                     <a href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
                     <a href="#"><img src="images/Google1.svg" alt="Google"/></a>
+                    <div className={styles.timee}>
+                        <div>
+                            {time.toLocaleTimeString()}
+                        </div>
+                        <div className={styles.datee}>
+                            {time.toLocaleDateString()}
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.title_block}>
                     <div className={styles.main_text}>
