@@ -1,4 +1,3 @@
-
 // @ts-ignore
 import React from 'react';
 import styles from "./StartPage.module.css";
@@ -25,11 +24,10 @@ const StartPage = () => {
                     <a href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
                     <a href="#"><img src="images/Google1.svg" alt="Google"/></a>
                 </div>
-
                 <div className={styles.main_text}>
                     <h1><span className={styles.title_text}>NETI IT</span> - Стартап в реальность!</h1>
                 </div>
-                <p className={styles.about}><span className={styles.about_text}>NETI IT</span>
+                <p className={styles.about}><span className={styles.about_text}>NETI IT </span>
                     – это не просто сообщество НГТУ для программистов, это одно из ключевых мест для продвижения ваших
                     будущих стартапов и мини-проектов.
                     Мы помогаем с развитием ваших идей и продвигаем проекты + помогаем в обучении тому или иному стеку
@@ -174,15 +172,15 @@ const StartPage = () => {
                     <span className={styles.contacts_sections}>Контакты</span>
                     <div className={styles.phone}>
                         <img src="images/Phone.svg"/>
-                            <a href="tel:+79137777777">+7 913 777-77-77</a>
+                        <a href="tel:+79137777777">+7 913 777-77-77</a>
                     </div>
                     <div className={styles.phone}>
                         <img src="images/Mail.svg"/>
-                            <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
+                        <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
                     </div>
                     <div className={styles.phone}>
                         <img src="images/Location.svg"/>
-                            <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
+                        <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
                     </div>
                     <span className={styles.social_footer}>Мы в соцсетях:</span>
                     <div className={styles.social_img}>
