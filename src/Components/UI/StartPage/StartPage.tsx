@@ -1,3 +1,4 @@
+
 // @ts-ignore
 import React from 'react';
 import styles from "./StartPage.module.css";
@@ -151,15 +152,13 @@ const StartPage = () => {
             <div className={styles.footer}>
                 <div className={styles.footer_section}>
                     <img src="images/logo-dark.png" alt="Логотип NETI IT"/>
-                        <br/>
-                            <span
-                                className={styles.footer_text}>NETI IT - место, где любой IT стартап становится реальностью.</span>
-                            <span className={styles.copyright}>©NETI IT, 2023. Все права защищены</span>
+                    <br/>
+                    <span
+                        className={styles.footer_text}>NETI IT - место, где любой IT стартап становится реальностью.</span>
+                    <span className={styles.copyright}>©NETI IT, 2023. Все права защищены</span>
                 </div>
-
                 <div className={styles.sections}>
                     <span className={styles.site_sections}>Разделы сайта</span>
-
                     <a href="#" className={styles.nav_item}><span>Главная</span></a>
                     <a href="#" className={styles.nav_item}><span>Новости</span></a>
                     <a href="#" className={styles.nav_item}><span>О нас</span></a>
@@ -172,15 +171,15 @@ const StartPage = () => {
                     <span className={styles.contacts_sections}>Контакты</span>
                     <div className={styles.phone}>
                         <img src="images/Phone.svg"/>
-                        <a href="tel:+79137777777">+7 913 777-77-77</a>
+                            <a href="tel:+79137777777">+7 913 777-77-77</a>
                     </div>
                     <div className={styles.phone}>
                         <img src="images/Mail.svg"/>
-                        <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
+                            <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
                     </div>
                     <div className={styles.phone}>
                         <img src="images/Location.svg"/>
-                        <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
+                            <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
                     </div>
                     <span className={styles.social_footer}>Мы в соцсетях:</span>
                     <div className={styles.social_img}>
