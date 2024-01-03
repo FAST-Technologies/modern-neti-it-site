@@ -75,7 +75,7 @@ body{
 }
 
 .title_text{
-
+    background: linear-gradient(90deg, #09AFF4 0%, #5C35CB 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -94,23 +94,33 @@ body{
 }
 .about_text{
     color: #09AFF4;
-
 }
+
+.about_text:hover{
+    color: #004DCD;
+    transition: 1s ease-in-out;
+}
+
 .button_1{
     width: 289px;
     height: 60px;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
-    border-radius: 20px 0px;
+    border-radius: 20px 0;
     background-color: #09AFF4;
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 16px 74px 15px 75px;
     color: white;
     font-size: 24px;
     margin-top: 50px;
     margin-bottom: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
 
+.button_1:hover{
+    background-color: #5d91dc;
 }
 
 .button_2{
@@ -128,20 +138,25 @@ body{
     margin-top: 40px;
     margin-bottom: 180px;
     float: right;
+}
 
+.button_2:hover{
+    background-color: #5d91dc;
 }
 
 .signip_text{
     text-align: center;
     vertical-align: middle;
-
+    margin-bottom: 10px;
 }
 
 
 .main_text{
+    margin-top: 10px;
     position: relative;
     width: 1020px;
 }
+
 .offers{
     display: inline-flex;
     align-items: flex-start;
@@ -386,6 +401,10 @@ body{
 
 }
 
+.button_3:hover{
+    background-color: #5d91dc;
+}
+
 
 .joinus_title{
     display: block;
@@ -490,6 +509,17 @@ button{
     font-size: 24px;
     font-weight: 500;
     width: 187px;
+}
+
+.phone{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.phone a{
+    padding-left: 6px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .contacts a{

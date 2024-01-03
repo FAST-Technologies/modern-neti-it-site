@@ -25,11 +25,10 @@ const StartPage = () => {
                     <a href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
                     <a href="#"><img src="images/Google1.svg" alt="Google"/></a>
                 </div>
-
                 <div className={styles.main_text}>
                     <h1><span className={styles.title_text}>NETI IT</span> - Стартап в реальность!</h1>
                 </div>
-                <p className={styles.about}><span className={styles.about_text}>NETI IT</span>
+                <p className={styles.about}><span className={styles.about_text}>NETI IT </span>
                     – это не просто сообщество НГТУ для программистов, это одно из ключевых мест для продвижения ваших
                     будущих стартапов и мини-проектов.
                     Мы помогаем с развитием ваших идей и продвигаем проекты + помогаем в обучении тому или иному стеку
@@ -153,15 +152,13 @@ const StartPage = () => {
             <div className={styles.footer}>
                 <div className={styles.footer_section}>
                     <img src="images/logo-dark.png" alt="Логотип NETI IT"/>
-                        <br/>
-                            <span
-                                className={styles.footer_text}>NETI IT - место, где любой IT стартап становится реальностью.</span>
-                            <span className={styles.copyright}>©NETI IT, 2023. Все права защищены</span>
+                    <br/>
+                    <span
+                        className={styles.footer_text}>NETI IT - место, где любой IT стартап становится реальностью.</span>
+                    <span className={styles.copyright}>©NETI IT, 2023. Все права защищены</span>
                 </div>
-
                 <div className={styles.sections}>
                     <span className={styles.site_sections}>Разделы сайта</span>
-
                     <a href="#" className={styles.nav_item}><span>Главная</span></a>
                     <a href="#" className={styles.nav_item}><span>Новости</span></a>
                     <a href="#" className={styles.nav_item}><span>О нас</span></a>
