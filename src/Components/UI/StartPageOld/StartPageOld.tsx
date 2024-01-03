@@ -1,9 +1,8 @@
-
 // @ts-ignore
 import React from 'react';
-import styles from "./StartPage.module.css";
+import styles from "./StartPageOld.module.css";
 import { Link } from 'react-router-dom';
-const StartPage = () => {
+const StartPageOld = () => {
     return (
         <div className={styles.cont}>
             <div className={styles.header}>
@@ -11,9 +10,11 @@ const StartPage = () => {
                     <img src="images/logo1.svg" alt="Логотип NETI IT"/>
                 </div>
                 <div className={styles.nav}>
-                    <a href="#" className={styles.nav_item}>
-                        <span>● Главная</span>
-                    </a>
+                    <Link to='/startpage'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>● Главная</span>
+                        </a>
+                    </Link>
                     <Link to='/ourblog'>
                         <a href="#" className={styles.nav_item}>
                             <span>Новости/Блог</span>
@@ -134,7 +135,7 @@ const StartPage = () => {
                     <div className={styles.startup_text_item}>
                         <span className={styles.startup_text_number}>20</span>
                         <br/>
-                            <span className={styles.startup_text_text}>Проффесиональных участников</span>
+                        <span className={styles.startup_text_text}>Проффесиональных участника</span>
                     </div>
                 </div>
                 <h2>Проекты</h2>
@@ -142,31 +143,31 @@ const StartPage = () => {
                     <div className={styles.projects_item}>
                         <div className={styles.project_img}>
                             <img src="images/Ellipse 6.png" alt="Изображение проекта"/>
-                                <h3>Название проекта</h3>
+                            <h3>Название проекта</h3>
                         </div>
                         <div className={styles.project_about}>
                             <h3>Немного о проекте</h3>
                             <span className={styles.project_title}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
                             <br/>
-                                <span className={styles.project_title_big}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей. Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
-                                <div className={styles.button_3}>
-                                    <span className={styles.signup_text}>Узнать больше...</span>
-                                </div>
+                            <span className={styles.project_title_big}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей. Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
+                            <div className={styles.button_3}>
+                                <span className={styles.signup_text}>Узнать больше...</span>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.projects_item}>
                         <div className={styles.project_img}>
                             <img src="images/Ellipse 6.png" alt="Изображение проекта"/>
-                                <h3>Длинное название проекта</h3>
+                            <h3>Длинное название проекта</h3>
                         </div>
                         <div className={styles.project_about}>
                             <h3>Немного о проекте</h3>
                             <span className={styles.project_title}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
                             <br/>
-                                <span className={styles.project_title_big}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей. Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
-                                <div className={styles.button_3}>
-                                    <span className={styles.signup_text}>Узнать больше...</span>
-                                </div>
+                            <span className={styles.project_title_big}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей. Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
+                            <div className={styles.button_3}>
+                                <span className={styles.signup_text}>Узнать больше...</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,15 +201,15 @@ const StartPage = () => {
                     <span className={styles.contacts_sections}>Контакты</span>
                     <div className={styles.phone}>
                         <img src="images/Phone.svg"/>
-                            <a href="tel:+79137777777">+7 913 777-77-77</a>
+                        <a href="tel:+79137777777">+7 913 777-77-77</a>
                     </div>
                     <div className={styles.phone}>
                         <img src="images/Mail.svg"/>
-                            <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
+                        <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
                     </div>
                     <div className={styles.phone}>
                         <img src="images/Location.svg"/>
-                            <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
+                        <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
                     </div>
                     <span className={styles.social_footer}>Мы в соцсетях:</span>
                     <div className={styles.social_img}>
@@ -225,4 +226,4 @@ const StartPage = () => {
     );
 };
 
-export default StartPage;
+export default StartPageOld;

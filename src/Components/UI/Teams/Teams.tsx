@@ -41,13 +41,19 @@ const Teams = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="#">Новости/Блог</a>
+                                <Link to='/ourblog'>
+                                    <a href="#">Новости/Блог</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">О нас</a>
+                                <Link to='/aboutus'>
+                                    <a href="#">О нас</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">Проекты</a>
+                                <Link to='/ourprojects'>
+                                    <a href="#">Проекты</a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#">
@@ -55,10 +61,14 @@ const Teams = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Сообщество</a>
+                                <Link to='/joinus'>
+                                    <a href="#">Сообщество</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">Контакты</a>
+                                <Link to='/information'>
+                                    <a href="#">Контакты</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

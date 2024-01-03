@@ -8,6 +8,7 @@ import OurBlog from "./Components/UI/OurBlog/OurBlog.tsx";
 import OurProjects from "./Components/UI/OurProjects/OurProjects.tsx";
 import Repository from "./Components/UI/Repository/Repository.tsx";
 import StartPage from "./Components/UI/StartPage/StartPage.tsx";
+import StartPageOld from "./Components/UI/StartPageOld/StartPageOld.tsx";
 
 
 export interface routes {
@@ -21,6 +22,16 @@ export interface routes {
 const AppRoutes: routes[] = [
     {
         index: true,
+        element: <StartPageOld/>
+    },
+    {
+        path: '/startpage',
+        requireAuth: false,
+        element: <StartPage/>
+    },
+    {
+        path: '/teams',
+        requireAuth: false,
         element: <Teams/>
     },
     {
