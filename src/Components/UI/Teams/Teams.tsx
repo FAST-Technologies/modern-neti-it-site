@@ -4,8 +4,6 @@ import Modal from "./../Modal/Modal"
 import styles from './Teams.module.css'
 import { Link } from 'react-router-dom';
 
-
-
 export interface team {
     id?: number
     name: string
@@ -20,7 +18,6 @@ export type popup = {
     children?: React.ReactNode
 }
 
-
 const teams: {id: number, name: string, job: string, description: string, img: string}[] = [
     { id: 1, name: "Ямщиков Владимир", job: "Руководитель проекта", description: "Разработал кучу всего, несмотря на то, что у него лапки.", img: './members/Владимир.jpg' },
     { id: 2, name: "Тамерлан Алиев", job: "Фронтенд-разработчик", description: "Разработал кучу всего, несмотря на то, что у него лапки.", img: './members/Тамерлан.jpg' },
@@ -28,6 +25,8 @@ const teams: {id: number, name: string, job: string, description: string, img: s
     { id: 4, name: "Сергей Панарин", job: "Бекенд-разработчик", description: "Разработал кучу всего, несмотря на то, что у него лапки.", img: './members/Сергей.jpg' }]
 const Teams = () => {
     const [account, setAccount]  = useState<boolean>(false)
+    const [time, setTime] = useState<Date>(new Date())
+    setInterval(() => setTime(new Date()), 1000)
     return (
         <div className={styles.Comands_div}>
             <header className={styles.header}>
@@ -123,6 +122,14 @@ const Teams = () => {
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1677 12.5796C19.4891 12.5796 20.6755 13.0336 21.6082 13.9255L24.1896 11.3441C22.6309 9.89182 20.5937 9 18.1677 9C14.6496 9 11.6059 11.0168 10.125 13.9582L13.1318 16.29C13.8396 14.1627 15.8236 12.5796 18.1677 12.5796Z" fill="#060922"/>
                             </svg>
                         </a>
+                        <div className={styles.timee}>
+                            <div>
+                                {time.toLocaleTimeString()}
+                            </div>
+                            <div className={styles.datee}>
+                                {time.toLocaleDateString()}
+                            </div>
+                        </div>
                     </div>
                     <p className={styles.teamText}>Команды</p>
                     <p className={styles.teamDescription}>Здесь представлены команды, работающие над своими проектами.</p>

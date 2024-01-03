@@ -16,6 +16,7 @@ body{
 }
 
 
+
 .Comands_div{
     display: flex;
     flex-direction: column;
@@ -90,6 +91,14 @@ body{
     color: #FBD784;
 }
 
+.timee{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.datee{
+    padding-left: 10px;
+}
 
 .button{
     max-height: 36px;
