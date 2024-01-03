@@ -1,0 +1,46 @@
+.personObject{
+    height: 521px;
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.personImage{
+    height: 289px;
+    width: 289px;
+    border-radius: 20px;
+}
+
+.personText{
+    height: 232px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personName{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.personJob{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.personDescription{
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+

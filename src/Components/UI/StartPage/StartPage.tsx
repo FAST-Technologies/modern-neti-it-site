@@ -1,75 +1,59 @@
-
 // @ts-ignore
-import React from 'react';
+import React, {useState} from 'react';
 import styles from "./StartPage.module.css";
-import { Link } from 'react-router-dom';
+import Footer from "../UsedUIComponents/Footer/Footer.tsx";
+import Header from "../UsedUIComponents/Header/Header.tsx";
 const StartPage = () => {
+    const [time, setTime] = useState<Date>(new Date())
+    setInterval(() => setTime(new Date()), 1000)
     return (
         <div className={styles.cont}>
-            <div className={styles.header}>
-                <div className={styles.logo}>
-                    <img src="images/logo1.svg" alt="Логотип NETI IT"/>
-                </div>
-                <div className={styles.nav}>
-                    <a href="#" className={styles.nav_item}>
-                        <span>● Главная</span>
-                    </a>
-                    <Link to='/ourblog'>
-                        <a href="#" className={styles.nav_item}>
-                            <span>Новости/Блог</span>
-                        </a>
-                    </Link>
-                    <Link to='/aboutus'>
-                        <a href="#" className={styles.nav_item}>
-                            <span>О нас</span>
-                        </a>
-                    </Link>
-                    <Link to='/ourprojects'>
-                        <a href="#" className={styles.nav_item}>
-                            <span>Проекты</span>
-                        </a>
-                    </Link>
-                    <Link to='/teams'>
-                        <a href="#" className={styles.nav_item}>
-                            <span>Команды</span>
-                        </a>
-                    </Link>
-                    <Link to='/joinus'>
-                        <a href="#" className={styles.nav_item}>
-                            <span>Сообщество</span>
-                        </a>
-                    </Link>
-                    <Link to='/information'>
-                        <a href="#" className={styles.nav_item}>
-                            <span>Контакты</span>
-                        </a>
-                    </Link>
-                </div>
-                <div className={styles.search}><a href="#"><img src="images/Search.svg" alt="Поиск"/></a></div>
-                <div className={styles.Account}><a href="#"><img src="images/Account.svg" alt="Аккаунт"/></a></div>
-            </div>
+            <Header/>
             <div className={styles.main}>
                 <div className={styles.social}>
-                    <a href="https://vk.com/neti_it" target="_blank"><img src="images/Vkontakte.svg" alt="Vk"/></a>
-                    <a href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
-                    <a href="#"><img src="images/Google1.svg" alt="Google"/></a>
+                    <a href="https://vk.com/neti_it" target="_blank">
+                        <img src="images/Vkontakte.svg" alt="Vk"/>
+                    </a>
+                    <a href="#">
+                        <img src="images/Telegram1.svg" alt="Telegram"/>
+                    </a>
+                    <a href="#">
+                        <img src="images/Google1.svg" alt="Google"/>
+                    </a>
+                    <div className={styles.timee}>
+                        <div>
+                            {time.toLocaleTimeString()}
+                        </div>
+                        <div className={styles.datee}>
+                            {time.toLocaleDateString()}
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.main_text}>
-                    <h1><span className={styles.title_text}>NETI IT</span> - Стартап в реальность!</h1>
+                    <h1>
+                        <span className={styles.title_text}>
+                            NETI IT
+                        </span>
+                        - Стартап в реальность!
+                    </h1>
                 </div>
-                <p className={styles.about}><span className={styles.about_text}>NETI IT </span>
+                <p className={styles.about}>
+                    <span className={styles.about_text}>
+                        NETI IT
+                    </span>
                     – это не просто сообщество НГТУ для программистов, это одно из ключевых мест для продвижения ваших
                     будущих стартапов и мини-проектов.
                     Мы помогаем с развитием ваших идей и продвигаем проекты + помогаем в обучении тому или иному стеку
-                    технологий от дизайна и моделирования до обучения фронтенду и бэкенду.</p>
+                    технологий от дизайна и моделирования до обучения фронтенду и бэкенду.
+                </p>
                 <div className={styles.button_1}>
                     <span className={styles.signup_text}>Записаться</span>
                 </div>
-
                 <h2>Что мы предлагаем</h2>
                 <div className={styles.offers}>
                     <div className={styles.offers_item_1}>
-                        <p>Вы сможете получить новые <span className={styles.offers_text}>возможности</span> в сферах
+                        <p>Вы сможете получить новые
+                            <span className={styles.offers_text}>возможности</span> в сферах
                             информационных технологий.</p>
                     </div>
                     <div className={styles.offers_item_2}>
@@ -178,49 +162,7 @@ const StartPage = () => {
                     <button className={styles.button4} type="submit">Войти в IT</button>
                 </div>
             </div>
-            <div className={styles.footer}>
-                <div className={styles.footer_section}>
-                    <img src="images/logo-dark.png" alt="Логотип NETI IT"/>
-                    <br/>
-                    <span
-                        className={styles.footer_text}>NETI IT - место, где любой IT стартап становится реальностью.</span>
-                    <span className={styles.copyright}>©NETI IT, 2023. Все права защищены</span>
-                </div>
-                <div className={styles.sections}>
-                    <span className={styles.site_sections}>Разделы сайта</span>
-                    <a href="#" className={styles.nav_item}><span>Главная</span></a>
-                    <a href="#" className={styles.nav_item}><span>Новости</span></a>
-                    <a href="#" className={styles.nav_item}><span>О нас</span></a>
-                    <a href="#" className={styles.nav_item}><span>Проекты</span></a>
-                    <a href="#" className={styles.nav_item}><span>Команда</span></a>
-                    <a href="#" className={styles.nav_item}><span>Сообщество</span></a>
-                    <a href="#" className={styles.nav_item}><span>Контакты</span></a>
-                </div>
-                <div className={styles.contacts}>
-                    <span className={styles.contacts_sections}>Контакты</span>
-                    <div className={styles.phone}>
-                        <img src="images/Phone.svg"/>
-                            <a href="tel:+79137777777">+7 913 777-77-77</a>
-                    </div>
-                    <div className={styles.phone}>
-                        <img src="images/Mail.svg"/>
-                            <a href="mailto:netiit@gmail.com" target="_blank">netiit@gmail.com</a>
-                    </div>
-                    <div className={styles.phone}>
-                        <img src="images/Location.svg"/>
-                            <a href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a>
-                    </div>
-                    <span className={styles.social_footer}>Мы в соцсетях:</span>
-                    <div className={styles.social_img}>
-                        <a href="https://vk.com/neti_it" target="_blank"><img src="images/Vk-1.svg"/></a>
-                        <a href="#" target="_blank"><img src="images/Telegram-1.svg"/></a>
-                        <a href="#" target="_blank"><img src="images/google-1.svg"/></a>
-                        <p className={styles.age}>12+</p>
-                    </div>
-
-                </div>
-
-            </div>
+            <Footer/>
         </div>
     );
 };
