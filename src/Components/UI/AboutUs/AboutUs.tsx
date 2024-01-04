@@ -1,9 +1,9 @@
 // @ts-ignore
 import React, {useState} from 'react';
 import styles from "./AboutUs.module.css";
-import Header from "../UsedUIComponents/Header/Header.tsx";
 import Footer from "../UsedUIComponents/Footer/Footer.tsx";
 import PersonCard from "./PersonCard.tsx";
+import {Link} from "react-router-dom";
 
 export interface person {
     id?: number
@@ -23,7 +23,48 @@ const AboutUs = () => {
     setInterval(() => setTime(new Date()), 1000)
     return (
         <div className={styles.cont}>
-            <Header/>
+            <header className={styles.header}>
+                <div className={styles.logo}>
+                    <img src="images/logo1.svg" alt="Логотип NETI IT"/>
+                </div>
+                <div className={styles.nav}>
+                    <Link to='/startpage'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>Главная</span>
+                        </a>
+                    </Link>
+                    <Link to='/ourblog'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>Новости/Блог</span>
+                        </a>
+                    </Link>
+                    <a href="#" className={styles.nav_item}>
+                        <span>● О нас</span>
+                    </a>
+                    <Link to='/ourprojects'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>Проекты</span>
+                        </a>
+                    </Link>
+                    <Link to='/teams'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>Команды</span>
+                        </a>
+                    </Link>
+                    <Link to='/joinus'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>Сообщество</span>
+                        </a>
+                    </Link>
+                    <Link to='/information'>
+                        <a href="#" className={styles.nav_item}>
+                            <span>Контакты</span>
+                        </a>
+                    </Link>
+                </div>
+                <div className={styles.search}><a href="#"><img src="images/Search.svg" alt="Поиск"/></a></div>
+                <div className={styles.Account}><a href="#"><img src="images/Account.svg" alt="Аккаунт"/></a></div>
+            </header>
             <main className={styles.main}>
                 <div className={styles.social}>
                     <a href="https://vk.com/neti_it" target="_blank"><img src="images/Vkontakte.svg" alt="Vk"/></a>
