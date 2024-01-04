@@ -1,11 +1,82 @@
 // @ts-ignore
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from "./StartPage.module.css";
 import Footer from "../UsedUIComponents/Footer/Footer.tsx";
 import {Link} from "react-router-dom";
 const StartPage = () => {
     const [time, setTime] = useState<Date>(new Date())
     setInterval(() => setTime(new Date()), 1000)
+    const [name, setName] = useState<string>("")
+    const [number, setNumber] = useState<string>('')
+    const [telegram, setTelegram] = useState<string>('')
+    const [nameDirty, setNameDirty] = useState<boolean>(false)
+    const [numberDirty, setNumberDirty] = useState<boolean>(false)
+    const [telegramDirty, setTelegramDirty] = useState<boolean>(false)
+    const [nameError, setNameError] = useState<string>('Имя не может быть пустым значением')
+    const [numberError, setNumberError] = useState<string>('Номер телефона не может быть пустым значением')
+    const [telegramError, setTelegramError] = useState<string>('Профиль телеграм не может быть пустым значением')
+    const [formValid, setFormValid] = useState<boolean>(false)
+
+    useEffect(()=> {
+        if (nameError || numberError || telegramError) {
+            setFormValid(false)
+        } else {
+            setFormValid(true)
+        }
+
+    }, [nameError, numberError, telegramError])
+    const blurHandler = (e: any) => {
+        switch (e.target.name) {
+            case 'name':
+                setNameDirty(true)
+                break
+            case 'number':
+                setNumberDirty(true)
+                break
+            case 'telegram':
+                setTelegramDirty(true)
+                break
+        }
+    }
+
+    const nameHandler = (e: any) => {
+        setName(e.target.value)
+        const rx = /^[а-яё\s]+$|^[\u0041-\u007a\s]+$/
+        if (!rx.test(String(e.target.value).toLowerCase())) {
+            setNameError("Некорректное имя")
+            if (!e.target.value) {
+                setNameError("Имя не может быть пустым значением")
+            }
+        } else {
+            setNameError("")
+        }
+    }
+
+    const numberHandler = (e: any) => {
+        setNumber(e.target.value)
+        const rf = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/
+        if (!rf.test(String(e.target.value))) {
+            setNumberError("Некорректный номер телефона")
+            if (!e.target.value) {
+                setNumberError("Номер не может быть пустым значением")
+            }
+        } else {
+            setNumberError("")
+        }
+    }
+
+    const telegramHandler = (e: any) => {
+        setTelegram(e.target.value)
+        const rs = /.*\B@(?=\w{5,64}\b)[a-zA-Z0-9]+(?:_[a-zA-Z0-9]+)*.*/
+        if (!rs.test(String(e.target.value))) {
+            setTelegramError("Некорректное ссылка на профиль")
+            if (!e.target.value) {
+                setTelegramError("Ссылка на профиль не может быть пустым значением")
+            }
+        } else {
+            setTelegramError("")
+        }
+    }
     return (
         <div className={styles.cont}>
             <header className={styles.header}>
@@ -94,7 +165,7 @@ const StartPage = () => {
                 <div className={styles.offers}>
                     <div className={styles.offers_item_1}>
                         <p>Вы сможете получить новые
-                            <span className={styles.offers_text}>возможности</span> в сферах
+                            <span className={styles.offers_text}> возможности</span> в сферах
                             информационных технологий.</p>
                     </div>
                     <div className={styles.offers_item_2}>
@@ -197,10 +268,13 @@ const StartPage = () => {
                 </div>
                 <span className={styles.joinus_title}>Присоединяйтесь к нам!</span>
                 <div className={styles.joinus}>
-                    <input type="text" name="username" placeholder="Имя"/>
-                    <input type="tel" name="telephone" placeholder="Телефон"/>
-                    <input type="text" name="telegram" placeholder="@Telegram"/>
-                    <button className={styles.button4} type="submit">Войти в IT</button>
+                    {(nameDirty && nameError) && <div style={{color: "red"}}>{nameError}</div>}
+                    <input onChange={e=>nameHandler(e)} value={name} onBlur={e => blurHandler(e)} type="text" name="name" placeholder="Имя"/>
+                    {(numberDirty && numberError) && <div style={{color: "red"}}>{numberError}</div>}
+                    <input onChange={e=>numberHandler(e)} value={number} onBlur={e => blurHandler(e)} type="tel" name="number" placeholder="Телефон"/>
+                    {(telegramDirty && telegramError) && <div style={{color: "red"}}>{telegramError}</div>}
+                    <input onChange={e=>telegramHandler(e)} value={telegram} onBlur={e => blurHandler(e)} type="text" name="telegram" placeholder="@Telegram"/>
+                    <button disabled={!formValid} className={styles.button4} type="submit">Войти в IT</button>
                 </div>
             </div>
             <Footer/>

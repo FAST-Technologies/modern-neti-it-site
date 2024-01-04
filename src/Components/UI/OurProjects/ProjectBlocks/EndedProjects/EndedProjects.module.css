@@ -1,0 +1,118 @@
+.endedproject_block{
+    width: 1216px;
+    height: 653px;
+    border-radius: 15px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.projectinfo{
+    height: 400px;
+    width: 100%;
+    padding: 36px 36px 4px 36px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectImage{
+    width: 456px;
+    height: 360px;
+    border-radius: 15px;
+}
+
+.project_information{
+    width: 688px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 36px;
+}
+
+.project_title{
+    color: #060922;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.project_result{
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.project_tasks{
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.project_phase{
+    color: #09AFF4;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    padding-left: 65%;
+}
+
+.project_phase a{
+    color: #004DCD;
+}
+
+.teaminfo{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    position: static;
+    height: 253px;
+}
+
+.teaminfo_title{
+    color: #060922;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.team_item{
+    height: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.imge{
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    margin: 15px 35px;
+}
+
+.name{
+    color: #060922;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.job{
+    text-align: center;
+    color: #4F4F4F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.itemBlock{
+    height: 200px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+}

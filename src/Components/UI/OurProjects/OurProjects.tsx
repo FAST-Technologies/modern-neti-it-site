@@ -4,7 +4,8 @@ import styles from "./OurProjects.module.css";
 import {Link} from "react-router-dom";
 import Footer from "../UsedUIComponents/Footer/Footer.tsx";
 import EndedProjects from "./ProjectBlocks/EndedProjects/EndedProjects.tsx";
-
+import PlanninProjects from "./ProjectBlocks/PlanninProjects/PlanninProjects.tsx";
+import ProgressProjects from "./ProjectBlocks/ProgressProjects/ProgressProjects.tsx";
 
 export interface projectAndMembers {
      id?: number
@@ -40,16 +41,16 @@ export interface myComp {
 }
 
 const projects: {id: number, img: string, title: string, result: string, tasks: string}[] = [
-    { id: 1, tasks: "Выполненные задачи проекта:\n" + "1. Состоит в создании платформера\n" + "2. Состоит в создании платформера\n" + "3. Состоит в создании платформера остоит в создании платформера", title: "Платформер на C#", result: "Итогом проекта стала кроссплатформерная игра", img: './members/Владимир.jpg' },
-    { id: 2, tasks: "Выполненные задачи проекта:\n" + "1. Состоит в создании платформера\n" + "2. Состоит в создании платформера\n" + "3. Состоит в создании платформера остоит в создании платформера", title: "Сайт NETI IT", result: "Итогом проекта стал сайт NETI IT", img: './members/Тамерлан.jpg' },]
+    { id: 1, tasks: "Выполненные задачи проекта:   \n" + "\n" + "1. Состоит в создании платформера\n" + "2. Состоит в создании платформера\n" + "3. Состоит в создании платформера остоит в создании платформера", title: "Платформер на C#", result: "Итогом проекта стала кроссплатформерная игра", img: './images/platformer.jpg' },
+    { id: 2, tasks: "Выполненные задачи проекта:\n" + "1. Состоит в создании платформера\n" + "2. Состоит в создании платформера\n" + "3. Состоит в создании платформера остоит в создании платформера", title: "Сайт NETI IT", result: "Итогом проекта стал сайт NETI IT", img: './images/NETE.svg' },]
 
-const teamMembers: {id: number, name: string, job: string, img1: string}[] = [
-    { id: 1, name: "Ямщиков Владимир", job: "Руководитель проекта", img1: './members/Владимир.jpg' },
-    { id: 2, name: "Тамерлан Алиев", job: "Фронтенд-разработчик", img1: './members/Тамерлан.jpg' },
-    { id: 3, name: "Вадим Колесников", job: "Бекенд-разработчик", img1: './members/Вадим.jpg' },
-    { id: 4, name: "Сергей Панарин", job: "Бекенд-разработчик", img1: './members/Сергей.jpg' },
-    { id: 5, name: "Сергей Панарин", job: "Бекенд-разработчик", img1: './members/Сергей.jpg' },
-    { id: 6, name: "Сергей Панарин", job: "Бекенд-разработчик", img1: './members/Сергей.jpg' }]
+const teamMembers: {id1: number, name: string, job: string, img1: string}[] = [
+    { id1: 1, name: "Ямщиков Владимир", job: "Руководитель проекта", img1: './members/Владимир.jpg' },
+    { id1: 2, name: "Тамерлан Алиев", job: "Фронтенд-разработчик", img1: './members/Тамерлан.jpg' },
+    { id1: 3, name: "Вадим Колесников", job: "Бекенд-разработчик", img1: './members/Вадим.jpg' },
+    { id1: 4, name: "Сергей Панарин", job: "Бекенд-разработчик", img1: './members/Сергей.jpg' },
+    { id1: 5, name: "Сергей Панарин", job: "Бекенд-разработчик", img1: './members/Сергей.jpg' },
+    { id1: 6, name: "Сергей Панарин", job: "Бекенд-разработчик", img1: './members/Сергей.jpg' }]
 
 const OurProjects = () => {
     const [time, setTime] = useState<Date>(new Date())
@@ -116,34 +117,44 @@ const OurProjects = () => {
                 <div className={styles.projectBlock}>
                     <div className={styles.progress_projects}>
                         <h2 className={styles.block_title}>Текущие проекты</h2>
-                        <div className={styles.project_information}>
-                            {projects.map((project: Project)=><EndedProjects
-                                    props={{title: project.title,
-                                        result: project.result,
-                                        tasks: project.tasks,
-                                        img: project.img
-                                    }}
-                                    />
-                            )}
-                            {teamMembers.map((teamMember: TeamMember)=><EndedProjects
-                                    props={{
-                                        name: teamMember.name,
-                                        job: teamMember.job,
-                                        img1: teamMember.img1
-                                    }}
-                                />
-                            )}
-                        </div>
+                        {projects.map((project: Project)=><PlanninProjects
+                                props={{title: project.title,
+                                    result: project.result,
+                                    tasks: project.tasks,
+                                    img: project.img
+                                }}
+                            />
+                        )}
                     </div>
                     <div className={styles.ended_projects}>
                         <h2 className={styles.block_title}>Завершённые проекты</h2>
-                        <div className={styles.project_information}>
-                        </div>
+                        {projects.map((project: Project)=><EndedProjects
+                                props={{title: project.title,
+                                    result: project.result,
+                                    tasks: project.tasks,
+                                    img: project.img
+                                }}
+                            />
+                        )}
+                        {/*{teamMembers.map((teamMember: TeamMember)=><EndedProjects*/}
+                        {/*        props={{*/}
+                        {/*            name: teamMember.name,*/}
+                        {/*            job: teamMember.job,*/}
+                        {/*            img1: teamMember.img1,*/}
+                        {/*        }}*/}
+                        {/*    />*/}
+                        {/*)}*/}
                     </div>
                     <div className={styles.plannin_projects}>
                         <h2 className={styles.block_title}>Планируемые проекты</h2>
-                        <div className={styles.project_information}>
-                        </div>
+                        {projects.map((project: Project)=><ProgressProjects
+                                props={{title: project.title,
+                                    result: project.result,
+                                    tasks: project.tasks,
+                                    img: project.img
+                                }}
+                            />
+                        )}
                     </div>
                 </div>
                 <div className={styles.commentBlock}>

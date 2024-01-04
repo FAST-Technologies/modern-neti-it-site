@@ -8,6 +8,7 @@ const EndedProjects: React.FC<myComp> = ({ props}) => {
         <div className={cl.endedproject_block}>
             <div className={cl.projectinfo}>
                 <img
+                    className={cl.projectImage}
                     src={props.img}
                     alt={props.title}
                 />
@@ -28,14 +29,16 @@ const EndedProjects: React.FC<myComp> = ({ props}) => {
             </div>
             <div className={cl.teaminfo}>
                 <h2 className={cl.teaminfo_title}>Команда проекта</h2>
-                <div className={cl.team_item}>
-                    <img src={props.img1} alt={props.name}/>
-                    <p className={cl.name}>
-                        {props.name}
-                    </p>
-                    <p className={cl.job}>
-                        {props.job}
-                    </p>
+                <div className={cl.itemBlock}>
+                    <div className={cl.team_item}>
+                        <img className={cl.imge} src={props.img1} alt={props.name}/>
+                        <p className={cl.name}>
+                            {props.name}
+                        </p>
+                        <p className={cl.job}>
+                            {props.job}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
