@@ -30,7 +30,7 @@ const AboutUs = () => {
                 <div className={styles.nav}>
                     <Link to='/startpage'>
                         <a href="#" className={styles.nav_item}>
-                            <span>● Главная</span>
+                            <span>Главная</span>
                         </a>
                     </Link>
                     <Link to='/ourblog'>
