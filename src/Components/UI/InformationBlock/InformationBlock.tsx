@@ -24,6 +24,14 @@ const InformationBlock = () => {
                             <span>Новости/Блог</span>
                         </a>
                     </Link>
+                    {/*<div className="navigation">*/}
+                    {/*    <a href="#">Menu 1</a>*/}
+                    {/*    <div className="navigation-content">*/}
+                    {/*        <a href="#">Link 1</a>*/}
+                    {/*        <a href="#">Link 2</a>*/}
+                    {/*        <a href="#">Link 3</a>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <Link to='/aboutus'>
                         <a href="#" className={styles.nav_item}>
                             <span>О нас</span>

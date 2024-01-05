@@ -210,9 +210,11 @@ const StartPage = () => {
                         <span>Вы сможете получить новые возможности в сферах информационных технологий.</span>
                     </div>
                 </div>
-                <div className={styles.button_2}>
-                    <span className={styles.signup_text}>Узнать больше...</span>
-                </div>
+                <Link to='/news'>
+                    <div className={styles.button_2}>
+                        <span className={styles.signup_text}>Узнать больше...</span>
+                    </div>
+                </Link>
                 <div className={styles.startup}>
                     <span className={styles.startup_title}>Вам нужна помощь в развитии <span>Стартапа?</span></span>
                 </div>
@@ -245,9 +247,11 @@ const StartPage = () => {
                             <span className={styles.project_title}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
                             <br/>
                                 <span className={styles.project_title_big}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей. Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
+                            <Link to='/ourprojects'>
                                 <div className={styles.button_3}>
-                                    <span className={styles.signup_text}>Узнать больше...</span>
+                                        <span className={styles.signup_text}>Узнать больше...</span>
                                 </div>
+                            </Link>
                         </div>
                     </div>
                     <div className={styles.projects_item}>
@@ -260,9 +264,11 @@ const StartPage = () => {
                             <span className={styles.project_title}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
                             <br/>
                                 <span className={styles.project_title_big}>Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей. Цель проекта состоит в том, чтобы разработать графический редактор с использованием нейросетей</span>
+                            <Link to='/ourprojects'>
                                 <div className={styles.button_3}>
                                     <span className={styles.signup_text}>Узнать больше...</span>
                                 </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

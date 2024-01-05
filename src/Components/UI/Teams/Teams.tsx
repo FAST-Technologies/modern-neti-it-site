@@ -43,6 +43,14 @@ const Teams = () => {
                                 <Link to='/ourblog'>
                                     <a href="#">Новости/Блог</a>
                                 </Link>
+                                {/*<div className="navigation">*/}
+                                {/*    <a href="#">Menu 1</a>*/}
+                                {/*    <div className="navigation-content">*/}
+                                {/*        <a href="#">Link 1</a>*/}
+                                {/*        <a href="#">Link 2</a>*/}
+                                {/*        <a href="#">Link 3</a>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                             </li>
                             <li>
                                 <Link to='/aboutus'>

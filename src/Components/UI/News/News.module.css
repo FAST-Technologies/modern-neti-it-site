@@ -1,0 +1,365 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    overflow-x: hidden;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: #060922;
+    background-size: 100% auto;
+    height: 100%;
+    max-width: 1920px;
+}
+
+.cont{
+    /*background-image: url("./backk.svg");*/
+    background-repeat: repeat;
+    background-size: 100% auto;
+    height: 100%;
+}
+
+.header{
+    box-sizing: border-box;
+    width: 1920px;
+    height: 100px;
+    padding: 30px 352px;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.nav{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 45px;
+    margin: 8px 70px 26px 6px;
+    font-size: 1.125em;
+}
+
+.nav_item{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.25s ease-in;
+}
+
+.nav_item::after{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #FBD784;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.nav_item:hover::after{
+    bottom: 0;
+    opacity: 1;
+}
+
+.nav_item:hover{
+    color: #FBD784;
+}
+
+.nav_item:visited{
+    color: #b9b9b9;
+    text-decoration: none;
+}
+
+.logo {
+    width: 112px;
+    height: 40px;
+    margin-right: 75px;
+    display: inline;
+}
+/*body{*/
+/*    background-image: url("images/bg\ 1.jpg");*/
+/*    background-repeat: repeat;*/
+/*}*/
+.search{
+    margin: 2px 30px 2px 0;
+    display: inline;
+    width: 36px;
+    height: 36px;
+}
+.Account{
+    display: inline;
+    width: 40px;
+    height: 40px;
+}
+
+.garantee_description span:hover{
+    color: #004DCD;
+    transition: 1s ease-out;
+}
+
+.main{
+    width: 1920px;
+    height: auto;
+    padding-left: 352px;
+    box-sizing: border-box;
+    padding-right: 352px;
+}
+
+.timee{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.datee{
+    padding-left: 10px;
+}
+
+.social{
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.title{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.title span{
+    background: linear-gradient(90deg, #09AFF4 0%, #5C35CB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description{
+    padding: 10px 30px 0 0;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 139.781%; /* 33.547px */
+}
+
+.garantee{
+    width: 100%;
+    height: 337px;
+    display: flex;
+    flex-direction: row;
+}
+
+.garantee_item{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    height: 327px;
+    width: 32%;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.garantee_title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.garantee_container{
+    width: 99%;
+    height: 275px;
+    border-radius: 20px;
+    border: 2px solid #09AFF4;
+    background: linear-gradient(116deg, rgba(0, 88, 138, 0.28) 0%, rgba(0, 67, 104, 0.00) 108.45%);
+    backdrop-filter: blur(19.549999237060547px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garantee_description{
+    position: absolute;
+    padding: 47px 27px;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 148.3%;
+    text-align: center;
+}
+
+.garantee_description span{
+    color: #09AFF4;
+}
+
+.title1{
+    margin: 60px 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.joinus{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button4{
+    border-radius: 20px 0;
+    width: 288px;
+    height: 60px;
+    background-color: #09AFF4;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.button4:hover{
+    background-color: #5d91dc;
+    transition: 1s ease-in;
+}
+
+.big_input{
+    width: 392px;
+    height: 137px;
+    padding: 18px 40px 71px 40px;
+    border-radius: 20px;
+    border: 1px solid #09AFF4;
+    box-sizing: border-box;
+    background-color: #060922;
+    font-weight: 300;
+    display: block;
+    color: #ffffff;
+}
+
+.big_input::placeholder{
+    font-size: 16px;
+}
+
+.question_block{
+    margin-top: 180px;
+    height: 330px;
+    width: 519px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question_title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.question_block_text{
+    display: inline-flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.link{
+    padding-left: 15px;
+    color: #ffffff;
+}
+
+.link:hover{
+    color: lightgrey;
+}
+
+.social1{
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color:white;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+
+.image{
+    margin-top: 90px;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.enter{
+    width: 527px;
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titled{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.titled span{
+    background: linear-gradient(90deg, #09AFF4 61.16%, #5C35CB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle{
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.titled_description{
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.enteringBlock{
+    height: 582px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.entering_item{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.number{
+    color: #09AFF4;
+    text-align: left;
+    font-family: Rubik Mono One, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 165.625%; /* 159px */
+}
+
+.entering_item_text{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    padding: 60px 0 60px 200px;
+}
