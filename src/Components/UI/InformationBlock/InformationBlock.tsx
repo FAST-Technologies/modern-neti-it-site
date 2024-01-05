@@ -65,13 +65,13 @@ const InformationBlock = () => {
                 <div className={styles.question_block}>
                     <h3 className={styles.question_title}>У вас возник вопрос? Свяжитесь с нами!</h3>
                     <div className={styles.social1}>
-                        <a  href="https://vk.com/neti_it" target="_blank"><img src="images/Vkontakte.svg" alt="Vk"/></a>
-                        <a  href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
-                        <a  href="#"><img src="images/Google1.svg" alt="Google"/></a>
+                        <a href="https://vk.com/neti_it" target="_blank"><img src="images/Vkontakte.svg" alt="Vk"/></a>
+                        <a href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
+                        <a href="#"><img src="images/Google1.svg" alt="Google"/></a>
                     </div>
-                    <div className={styles.question_block_text}><a className={styles.link} href="tel:+79137777777">netiit@mail.ru</a></div>
-                    <div className={styles.question_block_text}><a className={styles.link} href="mailto:netiit@gmail.com" target="_blank">+7(921)765-98-34</a></div>
-                    <div className={styles.question_block_text}><a className={styles.link} href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a></div>
+                    <div className={styles.question_block_text}> <img src="images/Phone.svg" alt="PhoneNumber"/><a className={styles.link} href="tel:+79137777777">netiit@mail.ru</a></div>
+                    <div className={styles.question_block_text}><img src="images/Mail.svg" alt="Email"/><a className={styles.link} href="mailto:netiit@gmail.com" target="_blank">+7(921)765-98-34</a></div>
+                    <div className={styles.question_block_text}><img src="images/Location.svg" alt="Location"/><a className={styles.link} href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a></div>
                 </div>
             </main>
             <Footer/>

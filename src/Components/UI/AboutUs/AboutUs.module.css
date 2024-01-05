@@ -395,6 +395,7 @@ body{
 }
 
 .link{
+    padding-left: 15px;
     color: #ffffff;
 }
 
@@ -411,6 +412,16 @@ body{
     margin-bottom: 40px;
 }
 
+
+.garantee_description span:hover{
+    color: #004DCD;
+    transition: 1s ease-out;
+}
+
+.achivements_text_text span:hover{
+    color: #004DCD;
+    transition: 1s ease-out;
+}
 /*a{*/
 /*    text-decoration: none;*/
 /*}*/
