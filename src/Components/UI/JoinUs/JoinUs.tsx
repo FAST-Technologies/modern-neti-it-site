@@ -202,9 +202,9 @@ const JoinUs = () => {
                         <a  href="#"><img src="images/Telegram1.svg" alt="Telegram"/></a>
                         <a  href="#"><img src="images/Google1.svg" alt="Google"/></a>
                     </div>
-                    <div className={styles.question_block_text}><a className={styles.link} href="tel:+79137777777">netiit@mail.ru</a></div>
-                    <div className={styles.question_block_text}><a className={styles.link} href="mailto:netiit@gmail.com" target="_blank">+7(921)765-98-34</a></div>
-                    <div className={styles.question_block_text}><a className={styles.link} href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a></div>
+                    <div className={styles.question_block_text}> <img src="images/Phone.svg" alt="PhoneNumber"/><a className={styles.link} href="tel:+79137777777">netiit@mail.ru</a></div>
+                    <div className={styles.question_block_text}><img src="images/Mail.svg" alt="Email"/><a className={styles.link} href="mailto:netiit@gmail.com" target="_blank">+7(921)765-98-34</a></div>
+                    <div className={styles.question_block_text}><img src="images/Location.svg" alt="Location"/><a className={styles.link} href="https://go.2gis.com/fshdu" target="_blank">Новосибирск, Россия, Блюхера 32</a></div>
                 </div>
             </main>
             <Footer/>

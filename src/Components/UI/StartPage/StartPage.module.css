@@ -81,16 +81,14 @@ body{
     margin-right: 75px;
     display: inline;
 }
-/*body{*/
-/*    background-image: url("images/bg\ 1.jpg");*/
-/*    background-repeat: repeat;*/
-/*}*/
+
 .search{
     margin: 2px 30px 2px 0;
     display: inline;
     width: 36px;
     height: 36px;
 }
+
 .Account{
     display: inline;
     width: 40px;
@@ -139,8 +137,8 @@ body{
     text-align: left;
     letter-spacing: normal;
     position: relative;
-
 }
+
 .about_text{
     color: #09AFF4;
 }
@@ -170,6 +168,7 @@ body{
 
 .button_1:hover{
     background-color: #5d91dc;
+    transition: 1s ease-in-out;
 }
 
 .button_2{
@@ -178,7 +177,7 @@ body{
     cursor: pointer;
     display: block;
     justify-content: center;
-    border-radius: 20px 0px;
+    border-radius: 20px 0;
     background-color: #09AFF4;
     box-sizing:border-box;
     padding: 16px 44px 15px 45px;
@@ -191,6 +190,7 @@ body{
 
 .button_2:hover{
     background-color: #5d91dc;
+    transition: 1s ease-in-out;
 }
 
 .signip_text{
@@ -198,7 +198,6 @@ body{
     vertical-align: middle;
     margin-bottom: 10px;
 }
-
 
 .main_text{
     margin-top: 10px;
@@ -213,7 +212,6 @@ body{
     margin-top: 20px;
     margin-bottom: 180px;
 }
-
 
 .offers_item_1{
     width: 392px;
@@ -245,8 +243,8 @@ body{
     background: linear-gradient(116deg, rgba(0, 88, 138, 0.28) 0%, rgba(0, 67, 104, 0.00) 108.45%);
     backdrop-filter: blur(19.549999237060547px);
     text-align: center;
-
 }
+
 .offers_item_2 p{
     width: 348px;
     height: 180px;
@@ -258,6 +256,7 @@ body{
     margin: 0;
     line-height: 148.253%;
 }
+
 .offers_item_3{
     width: 392px;
     height: 275px;
@@ -281,9 +280,15 @@ body{
     margin: 0;
     line-height: 148.253%;
 }
+
 .offers_text{
     color: #09AFF4;
     line-height: 148.253%;
+}
+
+.offers_text:hover{
+    color: #004DCD;
+    transition: 1s ease-out;
 }
 
 .news{
@@ -407,10 +412,7 @@ body{
     align-items: center;
     gap: 30px;
     float: left;
-    margin-right: 100px;
-    margin-left: 87px;
-    margin-top: 71px;
-    margin-bottom: 82px;
+    margin: 71px 100px 82px 87px;
 }
 
 .project_img h3{
@@ -419,7 +421,6 @@ body{
     margin: 0;
     text-align: center;
     width: 294px;
-
 }
 
 .project_about h3{
@@ -428,14 +429,11 @@ body{
     font-weight: 600;
     margin-bottom: 20px;
     margin-top: 49px;
-
-
 }
 
 .project_title{
     font-size: 20px;
     font-weight: 500;
-
 }
 
 .project_title_big{
@@ -459,11 +457,11 @@ body{
     font-size: 20px;
     margin-top: 50px;
     float: right;
-
 }
 
 .button_3:hover{
     background-color: #5d91dc;
+    transition: 1s ease-in-out;
 }
 
 
@@ -475,6 +473,7 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
+
 .joinus{
     display: flex;
     flex-direction: column;
@@ -495,6 +494,7 @@ body{
 
 .button4:hover{
     background-color: #5d91dc;
+    transition: 1s ease-in-out;
 }
 
 input{
@@ -528,7 +528,6 @@ input{
     font-weight: 500;
     font-size: 15px;
     margin-top: 30px;
-
 }
 
 .copyright{
@@ -542,26 +541,24 @@ input{
     margin-top: 160px;
 }
 
-
-
 .site_sections{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 500;
     width: 187px;
 }
+
 .sections_title{
     width: 187px;
     display: inline-block;
 }
+
 .footer_section{
     width: 412px;
     align-items: start;
     display: inline-flex;
     flex-direction: column;
 }
-
-
 
 .sections{
     display: inline-flex;
@@ -570,12 +567,14 @@ input{
     margin-left: 103px;
 
 }
+
 .contacts{
     display: inline-flex;
     flex-direction: column;
     gap: 30px;
     margin-left: 103px;
 }
+
 .contacts_sections{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -607,8 +606,8 @@ input{
     font-size: 20px;
     font-weight: 500;
     color: white;
-
 }
+
 .social_img{
     display: inline-flex;
     flex-direction: row;
@@ -631,12 +630,9 @@ input{
     /*position: fixed;*/
 }
 
-
 a{
     text-decoration: none;
 }
-
-
 
 a:hover{
     color: darkgrey;
@@ -647,6 +643,7 @@ h1 {
     font-weight: 700;
     margin-bottom: 55px;
 }
+
 h2 {
     font-size: 48px;
     font-weight: 700;
